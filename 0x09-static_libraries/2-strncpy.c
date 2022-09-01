@@ -1,14 +1,14 @@
 #include "main.h"
+
 /**
- * _strncpy - copies a string
- * @dest: A pointer to a character that will be changed
- * @src: A pointer to a character that will be changed
+ * *_strncpy - copies string
+ * @dest: string destination
+ * @src: string source
  * @n: value
  * Return: dest
  */
 
 char *_strncpy(char *dest, char *src, int n)
-
 {
 	int i;
 
@@ -24,7 +24,5 @@ char *_strncpy(char *dest, char *src, int n)
 		dest[i] = '\0';
 		i++;
 	}
-
 	return (dest);
-
 }

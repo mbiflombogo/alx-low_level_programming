@@ -1,23 +1,20 @@
 #include "main.h"
-/**
- * _strcmp - compares two strings
- * @s1: A pointer to a character that will be changed
- * @s2: A pointer to a character that will also be changed/modified/updated
- * Return: dest
- */
-int _strcmp(char *s1, char *s2)
 
+/**
+ * _strcmp - a function that compares two strings
+ * @s1: first string
+ * @s2: second string
+ * Return: value gotten from comparison based n ASCII
+ */
+
+int _strcmp(char *s1, char *s2)
 {
 
-	char *str_one = s1;
-	char *str_two = s2;
-
-
-	while (*str_one != '\0' && *str_two != '\0' && *str_one == *str_two)
+	while (*s1 != '\0' && *s2 != '\0' && *s1 == *s2)
 	{
-		str_one++;
-		str_two++;
+		s1++;
+		s2++;
 	}
 
-	return (*str_one - *str_two);
+	return (*s1 - *s2);
 }
